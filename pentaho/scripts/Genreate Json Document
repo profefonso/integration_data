@@ -1,0 +1,59 @@
+//Script here
+//Initialization Steps -> Change this according to your data set
+var json = {};
+
+//Non Nested Structure -> In your scenario these would be Student ID and Names
+json.text   = text;
+
+json.customer ={};
+json.customer.customerNumber = customerNumber;
+json.customer.customerName = customerName;
+json.customer.contactLastName = contactLastName;
+json.customer.contactFirstName = contactFirstName;
+json.customer.phone = phone;
+json.customer.addressLine1 = addressLine1;
+json.customer.addressLine2 = addressLine2;
+json.customer.city = city;
+json.customer.state = state;
+json.customer.postalCode = postalCode;
+json.customer.country = country;
+json.customer.salesRepEmployeeNumber = salesRepEmployeeNumber;
+json.customer.creditLimit = creditLimit;
+
+
+json.product ={};
+json.product.productCode = productCode;
+json.product.productName = productName;
+json.product.productScale = productScale;
+json.product.productVendor = productVendor;
+json.product.productDescription = productDescription;
+json.product.quantityInStock = quantityInStock;
+json.product.buyPrice = buyPrice;
+json.product.MSRP = MSRP;
+json.product.line ={};
+json.product.line.productLine = productLine;
+json.product.line.textDescription = textDescription;
+
+
+json.employee ={};
+json.employee.employeeNumber = employeeNumber;
+json.employee.lastName = lastName;
+json.employee.firstName = firstName;
+json.employee.email = email;
+json.employee.extension = extension;
+json.employee.reportsTo = reportsTo;
+json.employee.jobTitle = jobTitle;
+json.employee.office = {};
+json.employee.office.officeCode = officeCode;
+json.employee.office.city = city_1;
+json.employee.office.phone = phone_1;
+json.employee.office.addressLine1 = addressLine1_1;
+json.employee.office.addressLine2 = addressLine2_1;
+json.employee.office.state = state_1;
+json.employee.office.country = country_1;
+json.employee.office.postalCode = postalCode_1;
+json.employee.office.territory = territory;
+
+
+ // JSON Stringify the data object
+ var JsonOutput = JSON.stringify(json);

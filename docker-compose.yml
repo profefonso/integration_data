@@ -1,0 +1,63 @@
+version: "3"
+ 
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_DATABASE=data_integration
+      - MYSQL_ROOT_PASSWORD=secret
+      - MYSQL_USER=userdb
+      - MYSQL_PASSWORD=secret
+    volumes:
+      - ./volumenes/mysql:/var/lib/mysql
+    expose:
+      - 3306
+    ports:
+      - 3306:3306
+
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+
+  elasticsearch-single-1:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.3.0
+    container_name: elasticsearch-single-1
+    environment:
+      - "cluster.name=elasticsearch-local-cluster"
+      - "node.name=elasticsearch1"
+      - "network.host=0.0.0.0"
+      - "xpack.security.enabled=false"
+      - "xpack.monitoring.enabled=false"
+      - "xpack.watcher.enabled=false"
+      - "xpack.ml.enabled=false"
+      - "bootstrap.memory_lock=true"
+      - "ES_JAVA_OPTS=-Xms1024m -Xmx1024m"
+      - "discovery.type=single-node"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - ./volumenes/elasticsearch/node/0:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+
+  cerebro:
+    image: lmenezes/cerebro:0.8.1
+    container_name: cerebro-monitor
+    ports:
+      - "9000:9000"
+    external_links:
+      - elasticsearch-single-1:elasticsearch1
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.3.0
+    container_name: kibana-graph
+    ports:
+      - "5601:5601"
+    external_links:
+      - elasticsearch-single-1:elasticsearch1
+    environment:
+      ELASTICSEARCH_HOSTS: http://elasticsearch1:9200
