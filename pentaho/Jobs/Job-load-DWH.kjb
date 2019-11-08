@@ -315,7 +315,7 @@
       <attributes />
       <specification_method>filename</specification_method>
       <trans_object_id />
-      <filename>/Users/alfonsocaro/Developer/projects/data-integration/pentaho/Transform/Load_DWH_DIM.ktr</filename>
+      <filename>/Users/alfonsocaro/Developer/projects/integration_data/pentaho/Transform/Load_DWH_DIM.ktr</filename>
       <transname />
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -353,7 +353,7 @@
       <attributes />
       <specification_method>filename</specification_method>
       <trans_object_id />
-      <filename>/Users/alfonsocaro/Developer/projects/data-integration/pentaho/Transform/Load_DWH_FACT.ktr</filename>
+      <filename>/Users/alfonsocaro/Developer/projects/integration_data/pentaho/Transform/Load_DWH_FACT.ktr</filename>
       <transname />
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>

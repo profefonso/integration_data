@@ -988,7 +988,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1216</xloc>
+      <xloc>1232</xloc>
       <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1277,6 +1277,73 @@
     <GUI>
       <xloc>448</xloc>
       <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>customerNumber</name>
+      </field>
+      <field>
+        <name>customerName</name>
+      </field>
+      <field>
+        <name>contactLastName</name>
+      </field>
+      <field>
+        <name>contactFirstName</name>
+      </field>
+      <field>
+        <name>phone</name>
+      </field>
+      <field>
+        <name>addressLine1</name>
+      </field>
+      <field>
+        <name>addressLine2</name>
+      </field>
+      <field>
+        <name>city</name>
+      </field>
+      <field>
+        <name>state</name>
+      </field>
+      <field>
+        <name>postalCode</name>
+      </field>
+      <field>
+        <name>country</name>
+      </field>
+      <field>
+        <name>SalesRepEmployeeNumber</name>
+      </field>
+      <field>
+        <name>creditLimit</name>
+      </field>
+      <select_unspecified>Y</select_unspecified>
+    </fields>
+    <attributes />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>912</xloc>
+      <yloc>368</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1689,86 +1756,6 @@ FROM productlines
     </remotesteps>
     <GUI>
       <xloc>448</xloc>
-      <yloc>368</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select values 2</name>
-    <type>SelectValues</type>
-    <description />
-    <distribute>Y</distribute>
-    <custom_distribution />
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name />
-    </partitioning>
-    <fields>
-      <field>
-        <name>customerNumber</name>
-        <rename />
-      </field>
-      <field>
-        <name>customerName</name>
-        <rename />
-      </field>
-      <field>
-        <name>contactLastName</name>
-        <rename />
-      </field>
-      <field>
-        <name>contactFirstName</name>
-        <rename />
-      </field>
-      <field>
-        <name>phone</name>
-        <rename />
-      </field>
-      <field>
-        <name>addressLine1</name>
-        <rename />
-      </field>
-      <field>
-        <name>addressLine2</name>
-        <rename />
-      </field>
-      <field>
-        <name>city</name>
-        <rename />
-      </field>
-      <field>
-        <name>state</name>
-        <rename />
-      </field>
-      <field>
-        <name>postalCode</name>
-        <rename />
-      </field>
-      <field>
-        <name>country</name>
-        <rename />
-      </field>
-      <field>
-        <name>SalesRepEmployeeNumber</name>
-        <rename />
-      </field>
-      <field>
-        <name>creditLimit</name>
-        <rename />
-      </field>
-      <select_unspecified>Y</select_unspecified>
-    </fields>
-    <attributes />
-    <cluster_schema />
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>912</xloc>
       <yloc>368</yloc>
       <draw>Y</draw>
     </GUI>

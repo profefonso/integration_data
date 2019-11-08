@@ -294,7 +294,7 @@
       <attributes />
       <specification_method>filename</specification_method>
       <trans_object_id />
-      <filename>/Users/alfonsocaro/Developer/projects/data-integration/pentaho/Transform/load-ODS-step-one.ktr</filename>
+      <filename>/Users/alfonsocaro/Developer/projects/integration_data/pentaho/Transform/load-ODS-step-one.ktr</filename>
       <transname />
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -332,7 +332,7 @@
       <attributes />
       <specification_method>filename</specification_method>
       <trans_object_id />
-      <filename>/Users/alfonsocaro/Developer/projects/data-integration/pentaho/Transform/load-ODS-step-two.ktr</filename>
+      <filename>/Users/alfonsocaro/Developer/projects/integration_data/pentaho/Transform/load-ODS-step-two.ktr</filename>
       <transname />
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -370,7 +370,7 @@
       <attributes />
       <specification_method>filename</specification_method>
       <trans_object_id />
-      <filename>/Users/alfonsocaro/Developer/projects/data-integration/pentaho/Transform/load-ODS-step-three.ktr</filename>
+      <filename>/Users/alfonsocaro/Developer/projects/integration_data/pentaho/Transform/load-ODS-step-three.ktr</filename>
       <transname />
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
